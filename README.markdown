@@ -13,6 +13,7 @@ IOstrich(*address*)
 Instance of IOstrich associated with a specific shield.
 
 ### Example
+    #include <Wire.h>
     #include <IOstrich.h>
     
     // Create an IOstrich instance to communicate with the shield at address 0x20
@@ -35,6 +36,7 @@ Configure the specified GPIO pin to be an input or an output.
 nothing
 
 ### Example
+    #include <Wire.h>
     #include <IOstrich.h>
     
     // Create an IOstrich instance to communicate with the shield at 0x20
@@ -62,6 +64,7 @@ Configure the specified GPIO pin to be inverted or not.  Inverted mode means tha
 nothing
 
 ### Example
+    #include <Wire.h>
     #include <IOstrich.h>
     
     // Create an IOstrich instance to communicate with the shield at 0x20
@@ -90,6 +93,7 @@ Configure the specified GPIO pin to generate interrupts on change or not.
 nothing
 
 ### Example
+    #include <Wire.h>
     #include <IOstrich.h>
     
     // Create an IOstrich instance to communicate with the shield at 0x20
@@ -116,6 +120,7 @@ Configure the specified bank to generate interrupts on change or not.
 nothing
 
 ### Example
+    #include <Wire.h>
     #include <IOstrich.h>
     
     // Create an IOstrich instance to communicate with the shield at 0x20
@@ -143,6 +148,7 @@ Set a specified GPIO pin to a HIGH or LOW state.  Unlike the Arduino digital pin
 nothing
 
 ### Example
+    #include <Wire.h>
     #include <IOstrich.h>
     
     // Create an IOstrich instance to communicate with the shield at 0x20
@@ -171,6 +177,7 @@ Read the current value of a specific GPIO pin.
 HIGH or LOW
 
 ### Example
+    #include <Wire.h>
     #include <IOstrich.h>
     
     // Create an IOstrich instance to communicate with the shield at 0x20
