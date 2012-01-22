@@ -1,0 +1,14 @@
+#include <IOstrich.h>
+
+// Create an IOstrich instance to communicate with the shield at 0x20
+IOstrich iosInstance = IOstrich(0x20);
+
+void setup() {
+  byte pinLevel;
+  
+  // Configure bank A GPIO pin 0 as an input
+  iosInstance.pinMode(BANK_A, 0, INPUT);
+  
+  // Read the value on bank A GPIO pin 0 and put it into pinLevel
+  pinLevel = iosInstance.digitalRead(BANK_A, 0);
+}

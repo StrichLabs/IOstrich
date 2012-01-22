@@ -1,0 +1,4 @@
+#include <IOstrich.h>
+
+// Create an IOstrich instance to communicate with the shield at address 0x20
+IOstrich iosInstance = IOstrich(0x20);

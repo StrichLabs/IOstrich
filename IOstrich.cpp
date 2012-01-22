@@ -12,7 +12,7 @@
 // Constructor /////////////////////////////////////////////////////////////////
 // Function that handles the creation and setup of instances
 
-// Description: Creates a variable of type IOstrich, to communciate with the shield.
+// Description: Creates a variable of type IOstrich, to communicate with the shield.
 // Syntax: IOstrich(address)
 // Parameter: address - Address on the I2C bus of the shield to communicate with
 // Returns: Instance of IOstrich associated with a specific shield.
@@ -83,7 +83,7 @@ void IOstrich::pinInterrupt(byte bank, byte pin, byte interrupt) {
 }
 
 // Description: Configure the specified bank to generate interrupts on change or not.
-// Syntax: IOstrichInstance.pinInterrupt(bank, interrupt);
+// Syntax: IOstrichInstance.bankInterrupt(bank, interrupt);
 // Parameter: bank - Bank containing GPIO pins to change
 // Parameter: interrupt - Byte containing 0 (do not generate interrupts on change) or 1 (generate interrupts on change) for each bit, each representing one pin.
 // Returns: nothing

@@ -1,0 +1,11 @@
+#include <IOstrich.h>
+
+// Create an IOstrich instance to communicate with the shield at 0x20
+IOstrich iosInstance = IOstrich(0x20);
+
+void setup() {
+  // Configure bank A GPIO pin 0 to be inverted (digitalWrite to 1 makes it output low)
+  iosInstance.pinMode(BANK_A, 0, INVERTED);
+  // Configure bank A GPIO pin 0 to be non-inverted (which is the default)
+  iosInstance.pinMode(BANK_A, 1, NORMAL);
+}

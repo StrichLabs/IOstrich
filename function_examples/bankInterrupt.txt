@@ -1,0 +1,9 @@
+#include <IOstrich.h>
+
+// Create an IOstrich instance to communicate with the shield at 0x20
+IOstrich iosInstance = IOstrich(0x20);
+
+void setup() {
+  // Configure bank A GPIO pin 0 and 2 to generate interrupts on change
+  iosInstance.bankInterrupt(BANK_A, 0x05);  // 00000101
+}

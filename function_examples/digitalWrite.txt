@@ -1,0 +1,12 @@
+#include <IOstrich.h>
+
+// Create an IOstrich instance to communicate with the shield at 0x20
+IOstrich iosInstance = IOstrich(0x20);
+
+void setup() {
+  // Configure bank A GPIO pin 0 as an output
+  iosInstance.pinMode(BANK_A, 0, OUTPUT);
+  
+  // Set bank A GPIO pin 0 to a HIGH level
+  iosInstance.digitalWrite(BANK_A, 0, HIGH);
+}
