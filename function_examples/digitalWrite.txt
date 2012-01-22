@@ -1,3 +1,4 @@
+#include <Wire.h>
 #include <IOstrich.h>
 
 // Create an IOstrich instance to communicate with the shield at 0x20
